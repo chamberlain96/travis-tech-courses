@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/your-repo/travis-tech-courses.git'
+                git 'https://github.com/chamberlain96/travis-tech-courses.git'
             }
         }
 
@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('SonarQube Analysis') {
+       /* stage('SonarQube Analysis') {
             steps {
                 script {
                     // Run SonarQube analysis
@@ -33,7 +33,7 @@ pipeline {
                     sh 'mvn deploy'
                 }
             }
-        }
+        }*/
 
         stage('Build Docker Image') {
             steps {
@@ -44,7 +44,7 @@ pipeline {
             }
         }
 
-        //stage('Push Docker Image') {
+        /*stage('Push Docker Image') {
             steps {
                 script {
                     // Login to Docker registry
@@ -56,7 +56,7 @@ pipeline {
                     sh 'docker push your-docker-registry-url/travis-tech-courses-tomcat:latest'
                 }
             }
-        } //
+        } */
 
         stage('Deploy Docker Container') {
             steps {
