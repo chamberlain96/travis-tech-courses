@@ -12,7 +12,7 @@ RUN rm -rf ${CATALINA_HOME}/webapps/examples ${CATALINA_HOME}/webapps/docs
 COPY target/travis-tech-courses.war ${CATALINA_HOME}/webapps/travis-tech-courses.war
 
 # Expose Tomcat's default HTTP port
-EXPOSE 8080
+EXPOSE 8000
 
 # Start Tomcat
 CMD ["catalina.sh", "run"]
