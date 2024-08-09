@@ -18,9 +18,9 @@ public class CourseServlet extends HttpServlet {
         // Courses List
         resp.getWriter().println("<h2>Available Courses</h2>");
         resp.getWriter().println("<ul>");
-        resp.getWriter().println("<li>Introduction to cloud computing</li>");
-        resp.getWriter().println("<li>Basic linux knowledge</li>");
-        resp.getWriter().println("<li>Advanced aws management</li>");
+        resp.getWriter().println("<li>Introduction to Cloud Computing</li>");
+        resp.getWriter().println("<li>Basic Linux Knowledge</li>");
+        resp.getWriter().println("<li>Advanced AWS Management</li>");
         resp.getWriter().println("<li>Database Management Systems</li>");
         resp.getWriter().println("<li>Cloud Computing Fundamentals</li>");
         resp.getWriter().println("<li>Cybersecurity Essentials</li>");
@@ -40,10 +40,9 @@ public class CourseServlet extends HttpServlet {
         resp.getWriter().println("<h2>Our Teachers</h2>");
         resp.getWriter().println("<ul>");
         resp.getWriter().println("<li>Engineer Travis</li>");
-	resp.getWriter().println("<li>prof lienge</li>");
+        resp.getWriter().println("<li>Prof. Lienge</li>");
         resp.getWriter().println("<li>Prof. Fonsah</li>");
         resp.getWriter().println("<li>Dr. Sam</li>");
         resp.getWriter().println("</ul>");
     }
 }
-
